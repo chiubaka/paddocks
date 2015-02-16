@@ -2,6 +2,7 @@
 // * http://www.mathopenref.com/polygonirregulararea.html
 // * http://www.mathopenref.com/coordtrianglearea.html
 // * http://www.mathopenref.com/coordpolygonarea.html
+// * http://stackoverflow.com/questions/15762768/javascript-math-round-to-two-decimal-places
 
 function areaOfPolygon(points) {
   var numPoints = points.length;
@@ -16,7 +17,7 @@ function areaOfPolygon(points) {
   }
   area /= 2;
   area = Math.abs(area);
-  return area;
+  return area.toFixed(2);
 }
 
 // TODO: File input
